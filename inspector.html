@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspector Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 60px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="file"] {
+      margin-bottom: 24px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input:required {
+      border: 1px solid #007bff;
+      outline: none;
+    }
+
+    input:required:focus {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    }
+
+  </style>
+</head>
+<body>
+
+  <form enctype="multipart/form-data" method="post" action="/api/inspectors">
+    <h2>Inspector Registration Form</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="text" name="phone" required>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" name="fullName" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+
+    <label for="state">State:</label>
+    <select name="state" required>
+      <option value="" disabled selected>Select your state</option>
+      <option value="Abia">Abia</option>
+      <option value="Adamawa">Adamawa</option>
+      <option value="Akwa Ibom">Akwa Ibom</option>
+      <option value="Anambra">Anambra</option>
+      <option value="Bauchi">Bauchi</option>
+      <option value="Bayelsa">Bayelsa</option>
+      <option value="Benue">Benue</option>
+      <option value="Borno">Borno</option>
+      <option value="Cross River">Cross River</option>
+      <option value="Delta">Delta</option>
+      <option value="Ebonyi">Ebonyi</option>
+      <option value="Edo">Edo</option>
+      <option value="Ekiti">Ekiti</option>
+      <option value="Enugu">Enugu</option>
+      <option value="Gombe">Gombe</option>
+      <option value="Imo">Imo</option>
+      <option value="Jigawa">Jigawa</option>
+      <option value="Kaduna">Kaduna</option>
+      <option value="Kano">Kano</option>
+      <option value="Katsina">Katsina</option>
+      <option value="Kebbi">Kebbi</option>
+      <option value="Kogi">Kogi</option>
+      <option value="Kwara">Kwara</option>
+      <option value="Lagos">Lagos</option>
+      <option value="Nasarawa">Nasarawa</option>
+      <option value="Niger">Niger</option>
+      <option value="Ogun">Ogun</option>
+      <option value="Ondo">Ondo</option>
+      <option value="Osun">Osun</option>
+      <option value="Oyo">Oyo</option>
+      <option value="Plateau">Plateau</option>
+      <option value="Rivers">Rivers</option>
+      <option value="Sokoto">Sokoto</option>
+      <option value="Taraba">Taraba</option>
+      <option value="Yobe">Yobe</option>
+      <option value="Zamfara">Zamfara</option>
+      <option value="Federal Capital Territory">Federal Capital Territory</option>
+    </select>
+
+    <label for="address">Address:</label>
+    <input type="text" name="address" required>
+
+    <label for="idimage">Upload Inspector ID Card:</label>
+    <input type="file" name="idimage" accept="image/*" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

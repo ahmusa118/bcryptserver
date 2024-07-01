@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "organic-byway-406821",
+  "private_key_id": "fb0239b4a0fdbae3728b54edbfdf6d3e8bcf4b6d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVW1bDS/WhWK3O\n0tpAgaX2JGsgXGYeGSTy3oMGgHCa01bP33Mj6lkAhdnLXwss2l56djGn9WzfEhf8\n7Gg0KXrcUxQ8KSb7L4ubTUGwiKXm9z57N447bbb8eOfnB6IJ0Lepo1drVdlWI+UX\nVy0/BcFVf5HdN3AO03Pj8y6bsOpP86X6kdN7fpSyQOG/zjfj2GHLmefOQsruDVOq\n6wrN/yPmBNO7wBXhokNkCl7Zh132l1BVjew38v8za3LOWz81OpKxyI/cekkjc1zF\nB38s+GeDgf/LcZzAyyKhehbu2qIV+6RTiJKuP+GxQDrYB6kvoibRwzJOy5BtuUso\nkDNz3YYZAgMBAAECggEAG3U1Eg67Rp+9RJYNuQoGZApVUBWcHckCIJCC38oVU9OZ\ng0igTpG5ERBo0lvBuizDRnLiGpnDAGVZeXcqRPZGpca6XrC0H9UDXEIBz3iSk0oj\n/CMO9rZ8u3rK64hnseguztHi7QEgJo4ZjFqvi8IPmtN/X+8jyICtlDtGdwp6aT33\ncuOOhZv2wteNWHCLm26/aXZQd0yvkPr/MawsQTq/cwQ4pe9sl/3Pe0btaIpsuCfy\n/hH1HQ9d555HTMK/bckPWe5ute1ZIhvJshzGFNkORgh8BSxVz76Cm5VW94ODc2Hr\nipNfB8z2E2dhIZNvz65qGHypGEaU6yPJw9f2AnLoJQKBgQD+P2rQLM3joMo5+LZp\nj88Fl+khaLXftGzAfLy0zX3PqLU70ShDgANvPD6QSlVfPu7l2y1JJG5IZo94g7wV\nIV+9UtiQTkpcs1KzF/tUbp6GfyVehGwL4MGT4Nizd5ZmcM2xMYiyeslYYLVicMFs\nVaEWews/Oj3MmbU3CFSWTLkcJQKBgQDW08aQLPJBwa4iSbfOsXNZFZyrLqk78T4L\nrpdL/whz4agUuIg4QwcwVUgxbvF8+TbJfui7U8pQMbzUvJvdiQnOq7pmLmaWI8dH\n5BuWc/vEf4wEH3gllaBMxWHWLBOaFRfDsSyyDXJlo7G32B10fdjqETvrX2mlsllL\nw/hEK34l5QKBgBgcXX3GcfP/QI5E1s+l8qT+Jf6kFnNTgeizK5Yd0quJvT4h9KaK\nEklPNkOquPPiXPdxVJcWHFtDVqHAJGsAkjq7C4yL0COAYfxX7t6v6tqoXhvbhP+P\nXewvK33BfoLSeb8vCl6apFN8QFdIiB9E85TVMFjbphasEPJaGONz/S39AoGBAL1A\nrfG/lt/1BznvpXzyeQKm9nEb1z0WZqmV8nWhxEmKJy+x7VdbPU8IImRiL14AkpJq\nOg8lXtrNJmRnkAxXOIuYX8q63+cut9WOj/s4TDksgCX1rzu1GBXp4SnzhIU+RcRB\nJnXpQLlnvx2Nx00jvN9ftWDCmmi9uMr1ZpZvll89AoGBANOAlFCZxYfkLd8uLTPU\nWLoWkt8eX9n7qchbXvOWGZDQ8pY3BWbqKX6CAqustohVfYbXrRJSbz9Np1zB/BnI\nH0z9woVnKJmldy0hewQRFyWPZrzcMs15bJirfMnKpXdqwr4DIYosWMgxU0pNFRW7\ny2OimYajv/gGSveS9mMyLs6L\n-----END PRIVATE KEY-----\n",
+  "client_email": "test-upload-video@organic-byway-406821.iam.gserviceaccount.com",
+  "client_id": "113615507421614125305",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/test-upload-video%40organic-byway-406821.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

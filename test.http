@@ -1,0 +1,84 @@
+POST https://abujacar.com/api/postuserdetails
+Content-Type: application/json
+
+{
+   "email":"ahmusa11981@gmail.com",
+      "phone":"+2349029646666",
+      "fullName":"Ahmed Isa",
+      "password":"system123",
+      "state":"FCT",
+      "city":"Abuja",
+      "address":"11 Samora machael street asokoro"
+}
+
+###
+
+POST https://abujacar.com/api/postdata/ahmusa118@yhoo.com
+
+###
+
+POST https://abujacar.com/api/inspectors
+Content-Type: application/json
+
+{
+   "email":"bntmusa@gmail.com",
+      "phone":"+2348127244582",
+      "fullName":"Binta Musa",
+      "password":"system123",
+      "state":"FCT",
+      "city":"Abuja",
+      "address":"11 Samora machael street asokoro"
+}
+
+###
+
+
+POST http://abujacar.com/api/individual
+Content-Type: application/json
+
+{
+   "email":"musaham990@gmail.com",
+      "phone":"+2349029646666",
+      "fullName":"Ahmed Musa",
+      "password":"system123",
+      "state":"FCT",
+      "city":"Abuja",
+      "address":"11 Samora machael street asokoro"
+}
+
+###
+
+GET https://abujacar.com/getinspectormessages/bntmusa@gmail.com
+
+###
+
+POST https://abujacar.com/email/ahmusa118@yahoo.com
+
+###
+
+POST https://abujacar.com/api/forgotindividualemail/ahmusa118@yahoo.com
+
+###
+
+POST http://localhost:4000/api/socialadminsignup
+Content-Type: application/json
+
+{
+   "email":"ahmusa118@gmail.com",
+      "phone":"+2349029646666",
+      "fullName":"Ahmed Musa",
+      "password":"system123",
+      "address":"11 Samora machael street asokoro"
+}
+
+###
+
+GET http://localhost:4000/api/checkordertl?page=2
+
+###
+
+GET http://abujacar.com/api/improvedcars?page=2
+
+###
+
+GET http://213.210.20.108:4000/api/getcardetail/efa5ba0e
