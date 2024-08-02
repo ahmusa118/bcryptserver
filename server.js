@@ -33,6 +33,7 @@ const corsOptions = {
       console.log(origin)
     }
   },
+  
   credentials: true,
 }
 
@@ -165,7 +166,7 @@ const multer17 = multer({
       console.log(err);
   }
 })
-
+app.use('/.well-known', express.static(path.join(__dirname, '.well-known')));
 
 
 // Route to verify OTP
@@ -379,7 +380,12 @@ res.status(200).json({ok:'Car successfully deleted'})
 
 app.post('/api/individual', async (req, res) => {
   try {
-    // Generate random idno using hex and crypto
+    // Check for required fields
+    if (!req.body.email || !req.body.fullName || !req.body.password) {
+      return res.status(400).json({ error: 'Email, full name, and password are required' });
+    }
+
+    // Generate random verification code
     const randomMessage = Math.floor(Math.random() * 10000000) + 1;
 
     const tempParams = {
@@ -389,33 +395,33 @@ app.post('/api/individual', async (req, res) => {
       to_email: req.body.email,
       message: `Your verification code is ${randomMessage.toString()}`, // Convert the number to a string
     };
-  
 
- ;
+    // Hash the password
+    const hash = await bcrypt.hash(req.body.password, saltRounds);
 
-
-const hash=  await bcrypt.hash(req.body.password,saltRounds)
-    // Create Inspector object
+    // Create data object with required and optional fields
     const data = {
       email: req.body.email,
-      phone: req.body.phone,
       fullName: req.body.fullName,
       password: hash,
-      verification:randomMessage,
-      state: req.body.state.toLowerCase(),
-      address: req.body.address,
-      city:req.body.city
-     // Multer will automatically process the file and provide the filename
+      verification: randomMessage,
+      phone: req.body.phone || '',
+      state: req.body.state ? req.body.state.toLowerCase() : '',
+      address: req.body.address || '',
+      city: req.body.city || ''
     };
 
-    const newData = new Individualdetails(data); // Assuming Inspector is your Mongoose model
+    // Save to database
+    const newData = new Individualdetails(data);
     await newData.save();
+
+    // Send verification email
     emailjs.send('service_qxr4zxz', 'template_susux5c', tempParams, {
       publicKey: 'MnDecPoP0PPy4RKQV',
       privateKey: 'IkkTm11TdjrhgGScDbVjJ', // optional, highly recommended for security reasons
-    })
-   
-    res.status(201).json({ message: 'check your email for the verification code' });
+    });
+
+    res.status(201).json({ message: 'Check your email for the verification code' });
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Internal Server Error' });

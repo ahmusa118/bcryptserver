@@ -3,12 +3,8 @@ Content-Type: application/json
 
 {
    "email":"ahmusa11981@gmail.com",
-      "phone":"+2349029646666",
       "fullName":"Ahmed Isa",
-      "password":"system123",
-      "state":"FCT",
-      "city":"Abuja",
-      "address":"11 Samora machael street asokoro"
+      "password":"system123"
 }
 
 ###
@@ -33,17 +29,13 @@ Content-Type: application/json
 ###
 
 
-POST http://abujacar.com/api/individual
+POST http://localhost:4000/api/individual
 Content-Type: application/json
 
 {
-   "email":"musaham990@gmail.com",
-      "phone":"+2349029646666",
+   "email":"musaham9901@gmail.com",
       "fullName":"Ahmed Musa",
-      "password":"system123",
-      "state":"FCT",
-      "city":"Abuja",
-      "address":"11 Samora machael street asokoro"
+      "password":"system123"
 }
 
 ###
