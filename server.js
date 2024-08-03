@@ -1175,7 +1175,6 @@ app.get('/api/improvedcars', async (req, res) => {
 
     // Define the search criteria
     const searchCriteria = {
-      state: 'Pending',
       $or: [
         { make: { $regex: search, $options: 'i' } },
         { requestno: { $regex: search, $options: 'i' } }, // Case-insensitive regex search for receipt number
